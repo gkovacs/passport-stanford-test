@@ -33,7 +33,7 @@ app.use(passport.session());
 
 saml = new suSAML.Strategy({
   protocol:           'http://',
-  idp:                'itlab',
+  idp:                'itlabv2',
   entityId:           'https://github.com/scottylogan/passport-stanford',
   path:               acsPath,
   loginPath:          loginPath,
