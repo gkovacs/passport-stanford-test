@@ -32,14 +32,16 @@ app.use(passport.session());
 
 saml = new suSAML.Strategy({
   protocol:           'http://',
-  idp:                'uat',
+  idp:                'itlab',
   entityId:           'https://github.com/scottylogan/passport-stanford',
   path:               acsPath,
   loginPath:          loginPath,
   passReqToCallback:  true,
   passport:           passport,
-  decryptionPvkPath:  './private.pem',
-  decryptionCertPath: './public.pem',
+  decryptionPvk:      getsecret('sp_key'),
+  decryptionCert:     getsecret('sp_cert')
+  //decryptionPvkPath:  './private.pem',
+  //decryptionCertPath: './public.pem',
 });
 
 passport.use(saml);
