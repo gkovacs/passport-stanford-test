@@ -32,9 +32,9 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 saml = new suSAML.Strategy({
-  protocol:           'http://',
+  protocol:           'https://',
   idp:                'itlabv2',
-  entityId:           'https://github.com/scottylogan/passport-stanford',
+  entityId:           'https://passport-stanford-test.herokuapp.com/',
   path:               acsPath,
   loginPath:          loginPath,
   passReqToCallback:  true,
