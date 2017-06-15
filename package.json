@@ -30,7 +30,7 @@
     "morgan": "*",
     "passport": "*",
     "passport-saml": "*",
-    "passport-stanford": "file:..",
+    "passport-stanford": "*",
     "pug": "2.0.0-beta4",
     "qs": "*"
   },
