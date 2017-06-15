@@ -13,7 +13,7 @@ var http          = require('http'),
     loginPath     = '/login',
     saml;
 
-app.set('port', 3000);
+app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/app/views');
 app.set('view engine', 'pug');
 
