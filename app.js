@@ -40,7 +40,7 @@ saml = new suSAML.Strategy({
   passReqToCallback:  true,
   passport:           passport,
   decryptionPvk:      getsecret('sp_key'),
-  decryptionCert:     getsecret('sp_cert')
+  decryptionCert:     getsecret('sp_cert'),
   //decryptionPvkPath:  './private.pem',
   //decryptionCertPath: './public.pem',
   host:               'passport-stanford-test.herokuapp.com'
