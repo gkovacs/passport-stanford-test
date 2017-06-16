@@ -43,6 +43,7 @@ saml = new suSAML.Strategy({
   decryptionCert:     getsecret('sp_cert')
   //decryptionPvkPath:  './private.pem',
   //decryptionCertPath: './public.pem',
+  host:               'passport-stanford-test.herokuapp.com'
 });
 
 passport.use(saml);
